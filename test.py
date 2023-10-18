@@ -28,8 +28,6 @@ class_list = data.split("\n")
 count=0
 tracker =Tracker()
 
-area1=[(702,275),(438,381),(466,406),(735,285)]
-area2=[(745,292),(485,411),(505,425),(762,298)]
 
 while True:    
     frame = stream.read()   
@@ -67,9 +65,7 @@ while True:
         cv2.rectangle(frame,(x3,y3),(x4,y4),(255,255,255),2) 
         cvzone.putTextRect(frame,f'{id1}',(x3,y3),1,1)
                  
-    cv2.polylines(frame,[np.array(area1,np.int32)],True,(0,0,255),2)
-    cv2.polylines(frame,[np.array(area2,np.int32)],True,(0,0,255),2)
-    
+   
 
 
     cv2.imshow("RGB", frame)
