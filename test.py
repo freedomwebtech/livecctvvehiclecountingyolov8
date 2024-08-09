@@ -7,7 +7,7 @@ from vidgear.gears import CamGear
 from tracker import*
 model=YOLO('yolov8s.pt')
 
-stream = CamGear(source='https://www.youtube.com/watch?v=9bFOCNOarrA', stream_mode = True, logging=True).start() # YouTube Video URL as input
+stream = CamGear(source='https://www.youtube.com/watch?v=cyPtzE6d-sg', stream_mode = True, logging=True).start() # YouTube Video URL as input
 
 def RGB(event, x, y, flags, param):
     if event == cv2.EVENT_MOUSEMOVE :  
